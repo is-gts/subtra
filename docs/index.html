@@ -28,6 +28,11 @@ button:disabled{opacity:.6;cursor:default}
 .msg{font-size:14px;min-height:1.4em;margin:8px 0 0}
 .msg.ok{color:var(--ok)}
 .hp{position:absolute;left:-9999px}
+.features{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+.features h2{font-size:22px;margin:0 0 20px}
+.features dl{margin:0;display:grid;gap:18px}
+.features dt{font-weight:600;margin:0 0 2px}
+.features dd{margin:0;color:var(--muted);font-size:15px}
 footer{margin-top:40px;color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -40,6 +45,17 @@ footer{margin-top:40px;color:var(--muted);font-size:13px}
 <ul><li>サブスク一覧と月額合計を一画面で</li><li>トライアル終了・更新日の前日にアラート</li><li>解約手順へのリンク付き</li></ul>
 <form><input type="email" name="email" placeholder="メールアドレス" required autocomplete="email"><input class="hp" name="hp" tabindex="-1" autocomplete="off"><button>事前登録</button></form>
 <p class="msg"></p>
+<section class="features">
+<h2>できること</h2>
+<dl>
+<dt>サブスク一覧</dt><dd>Netflix、Spotify、Amazonプライムなど、契約中のサービスを一覧で管理。月額・年額の合計もひと目でわかります。</dd>
+<dt>無料トライアル終了アラート</dt><dd>トライアルの終了日を登録しておくと、前日と当日に通知。「気づいたら課金されていた」を防ぎます。</dd>
+<dt>更新日の事前通知</dt><dd>年払いなど忘れがちな自動更新も、更新日の数日前にお知らせ。続けるかどうかを落ち着いて判断できます。</dd>
+<dt>解約手順へのリンク</dt><dd>各サービスの解約ページ・手順へのリンクをアプリ内に用意。探し回らずにその場で解約できます。</dd>
+<dt>支出の振り返り</dt><dd>月ごとのサブスク支出をグラフで表示。使っていないサービスに気づけます。</dd>
+<dt>オフライン動作・アカウント不要</dt><dd>データは端末内に保存。登録やログインなしですぐ使えます。</dd>
+</dl>
+</section>
 <footer>登録は無料。公開時にメールで1通だけお知らせします。メールアドレスはリリース通知のみに使用し、第三者には提供しません。</footer>
 </main>
 <script>
